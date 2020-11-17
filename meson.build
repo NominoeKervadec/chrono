@@ -21,7 +21,6 @@ src = [
 chrono_static = static_library('chrono-tsc', [src],
                                dependencies: openmp_dep,
                                include_directories: [inc, inc_interface, inc_interface_native],
-                               native : true,
                                install: true)
 
 libchrono_dep = declare_dependency(include_directories: [inc, inc_interface, inc_interface_native],
